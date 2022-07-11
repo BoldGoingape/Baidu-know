@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度登录</title>
+    <style>
+        body{
+            background-color: darkgray;
+        }
+        .box{
+            width: 750px;
+            height: 450px;
+            background-color: aliceblue;
+            margin: 50px auto;
+            display: none;
+            border-radius: 25px;
+        }
+        .left {
+            position: relative;
+            padding-top: 25px;
+            width: 50%;
+            height: 80%;
+            border-right: 2px solid #eee;
+        }.box img{
+            margin-top: 15px;
+            margin-left: 40px;
+        }
+        .texts{
+            margin-top: 15px;
+         font-size: 18px;
+         text-align: center;
+         line-height: 18px;
+         margin-bottom: 15px;
+        }
+        .left-button{
+            margin-left: 95px;
+            width: 160px;
+            height: 34px;
+     /* background-color:darkgrey; */
+    border-radius: 8px;
+    color: #4e6ef2;
+    text-align: center;
+    font-size: 14px;
+        }
+        .left-button img{
+            height: 21px;
+             width: 19px;
+            vertical-align: middle;
+             margin-right: 4px;
+             margin-bottom: 10px;
+        }
+    .bottom{
+        border-top: 1px solid #dadada;
+    }
+    .right{
+        width: 350px;
+        height: 360px;
+        position: relative;
+        left: 390px;
+        top: -400px;
+    }
+    .forms{
+        margin-top: 50px;
+    }
+    .forms input{
+        padding: 10px 20px;
+    margin: 0;
+    height: 25px;
+    line-height: 20px;
+    width: 280px;
+    border: 1px solid #b8b8b8;
+    border-radius: 8px;
+    }
+    </style>
+</head>
+<body>
+    <div class="button">
+        <button id="btn"> 注册</button>
+    </div>
+    <div class="box" id="box" >
+        <div class="left">
+            <div class="header">
+                <img src="./image/loginlogo.gif" alt="">
+            </div>
+            <div class="erweima">
+                <img src="./image/qrcode.png" alt="" style=" Border-radius:15px; width: 105px;height: 105px; padding: 8px; border: 2px solid #dadada " >
+                <img src="./image/qrcodeLoginGuide1.png" alt="" style="width: 120px;height: 130px;margin-left: 35px; ">
+                <div class="texts" style="">
+                    请使用百度APP扫码登录
+                </div>
+            </div>
+            <div class="left-button">
+               <img src="./image/baidu-download-icon.png" alt=""> 下载百度APP
+            </div>
+            </div>
+            <div class="bottom">
+               <img src="./image/bd-acc-qzone.png" alt=""style="width:35px">
+               <img src="./image/bd-acc-tsina.png" alt=""style="  width:35px; ">
+               <img src="./image/bd-acc-weixin.png" alt="" style="width: 35px;">
+               <span style="float: right; margin-right: 25px;margin-top: 20px;color: #4e6ef2;">立即注册</span>
+            </div>
+            <div class="right">
+               <div class="right-header">
+                <samp style="color: #222;font-weight: 600;margin-right: 36px;font-size: 18px;line-height: 18px;border-bottom: 2px solid blue;padding-bottom: 8px;">账号登陆</samp> <span>短信登陆</span>
+              <img src="./image/uni-close.png" alt="" style="width:21px ;height: 21px; margin-left: 105px;margin-top: 25px;" >
+            
+                <div class="forms" >
+                    <form action="">
+                        <div class="use">
+                            <input type="text" placeholder="手机号/用户名/邮箱" >
+                        </div>
+                        <br>
+                        <div class="pas">
+                            <input type="text" placeholder="手机号/用户名/邮箱">
+                        </div>
+                    </form>
+                    <div class="right-text" style="float: right;color: #4e6ef2;font-size: 15px;">
+                        忘记密码？
+                    </div>
+                    <div style="margin-top: 35px;">
+                    <button style="font-weight: 800;border: 0;font-size: 17px; color: #eee; border-radius: 10px;width: 325px;height: 40px;background-color: #4e6ef2;line-height: 40px;">登录</button>
+                    </div>
+                    <div style="font-size: 14px;text-align: center;">阅读并接受<span style="color: blue;">百度用户协议</span> 和 <span style="color: blue;">隐私政策</span></div>
+               </div> 
+            </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+    <script>
+          var btn = document.getElementById("btn");
+          var box =document.getElementById('box');
+         btn.onclick = function(){
+        // box[0].style.display='block';
+        box.style.display='block';
+}
+        </script>
+</body>
+</html>

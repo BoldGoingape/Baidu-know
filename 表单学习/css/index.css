@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+   
+}
+.nav a{
+    margin-left:24px ;
+    margin-top: 19px;
+    display: inline-block;
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-right{
+    margin-right: 35px;
+   float: right;
+}
+.nav-right button{ 
+    
+    height: 24px;
+    width: 48px;
+    line-height: 24px;
+    font-weight: 400;
+    background-color: #4e6ef2;
+    margin-top: 18px;
+    margin-left: 32px;
+    font-size: 13px;
+    color: aliceblue;
+    text-align: center;
+    border: 0;
+    border-radius: 6px;
+}
+/* 主体 */
+.cennter{
+    width: 800px;
+    height: 900px;
+    /* background-color: aqua; */
+    margin: 0 auto;
+}
+.cennter img{
+    width: 270px;
+    aspect-ratio: auto 270 / 129;
+    height: 129px;
+    margin: 0 auto;
+    margin-left: 280px;
+}

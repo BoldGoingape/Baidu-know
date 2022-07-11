@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+    <style>
+        input{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <form name="" action="" method="get">
+        <legend>大家好</legend>
+        <input type="" name="" value="" size=""placeholder="你好">
+
+        <div>
+            <!-- 单选 -->
+            <input type="radio" name="gender" id="man" checked ><label for="man">男</label>
+            <input type="radio" name="gender" id="woman"  ><label for="woman">女</label>
+        </div>
+
+        <div>
+            <!-- 单选 -->
+            <input type="input" name="gender" id="password" checked ><label for="password">密码</label><br>
+            <input type="input" name="gender" id="username"  ><label for="username">账号</label>
+        </div>
+        <div>
+            <!-- 多选框 -->
+            <input type="checkbox" name="hobby" value="sing" checked>唱歌
+            <input type="checkbox" name="hobby" value="sing" >跳舞
+            <input type="checkbox" name="hobby" value="sing" >睡觉
+        </div>
+        <div>
+            <!-- 提交 -->
+            <input type="submit"value="登录">
+            <input type="reset">
+        </div>
+        <div>
+            <!-- 下拉框 -->
+            <select name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi" selected>Audi</option>
+                </select>
+        </div>
+        <div>
+            <input list="browsers">
+             <datalist id="browsers">
+           <option value="Internet Explorer">
+         <option value="Firefox">
+         <option value="Chrome">
+         <option value="Opera">
+          <option value="Safari">
+        </datalist>
+        </div>
+        <div>
+            <!-- 数子 -->
+            数字
+            <input type="number" name="quantity" min="1" max="5">
+        </div>
+        <!-- 颜色 -->
+        <div>
+            <input type="color">
+            <input type="range"><br>
+            <input type="date"><br>
+            <input type="time"><br>
+            <input type="datetime"><br>
+            <input type="search"><br>
+            <input type="email">
+        </div>
+    </form>
+</body>
+</html>
